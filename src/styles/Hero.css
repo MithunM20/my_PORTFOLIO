@@ -1,0 +1,120 @@
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 10px #00f5a0, 0 0 20px #00f5a0;
+  }
+  50% {
+    text-shadow: 0 0 20px #00ffcc, 0 0 30px #00f5a0;
+  }
+  100% {
+    text-shadow: 0 0 10px #00f5a0, 0 0 20px #00f5a0;
+  }
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Text Content */
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.hero-hi {
+  font-size: 48px;
+  color: #00f5a0;
+  margin-bottom: 10px;
+  animation: glowPulse 2s infinite;
+}
+
+.hero-name {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #ffffff88;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #b2fff5;
+  line-height: 1.5;
+}
+
+/* Image Container */
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  animation: slideInRight 1.2s ease-out forwards;
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 245, 160, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    animation: none;
+    margin-top: 30px;
+  }
+
+  .hero-image {
+    animation: none;
+    padding-top: 0;
+  }
+}

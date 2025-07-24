@@ -1,0 +1,49 @@
+.contact-icon-section {
+  background-color: #0F2027; /* Deep gradient start color */
+  color: #B2FFF5; /* Aqua text */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-icon-section .section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #00F5A0; /* Neon green title */
+  text-shadow: 0 0 6px #00F5A0;
+}
+
+.icon-contact-box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1a2b33;
+  padding: 15px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #B2FFF5;
+  transition: 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 0 8px rgba(0, 245, 160, 0.2);
+}
+
+.contact-icon:hover {
+  background-color: #00F5A0;
+  color: #0F2027;
+}
+
+.contact-icon .icon {
+  font-size: 22px;
+  color: #00F5A0;
+  transition: 0.3s ease;
+}
+
+.contact-icon:hover .icon {
+  color: #0F2027;
+}

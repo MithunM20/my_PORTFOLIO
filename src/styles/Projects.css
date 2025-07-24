@@ -1,0 +1,66 @@
+.projects-section {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00F5A0;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 8px #00F5A0;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 245, 160, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 245, 160, 0.4);
+}
+
+.project-card h3 {
+  color: #B2FFF5;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #D8FDF2;
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.btn.github {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #00F5A0;
+  color: #00F5A0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.github:hover {
+  background-color: #00F5A0;
+  color: #0F2027;
+}
