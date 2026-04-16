@@ -1,5 +1,5 @@
 import "../styles/Hero.css";
-import image from "../assets/profile.jpg"; // Updated to the new profile image
+import image from "../assets/image.jpg"; // Updated to the new profile image
 import { motion } from "framer-motion";
 
 const Hero = () => {
