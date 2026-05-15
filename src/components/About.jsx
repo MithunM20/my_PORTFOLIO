@@ -66,7 +66,7 @@ function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-             <h2>3+</h2>
+             <h2>1+</h2>
              <p>Years Dev Exp</p>
           </motion.div>
 
@@ -77,7 +77,7 @@ function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-             <h2>10+</h2>
+             <h2>5+</h2>
              <p>Real-World Projects</p>
           </motion.div>
 
